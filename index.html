@@ -34,36 +34,40 @@
 </header>
 
 <body>
-    <div id="profileoverview">
+    <div id="profileoverview" class="section">
         <table>
             <tr>
                 <td>
-                    <img src="profile_pic.JPEG" height="200px">
+                    <img src="profile_pic.JPEG">
                 </td>
                 <td>
                     <h2>Hi everyone! My name is</h2>
                     <h1>Marc Lesley</h1>
                     <h2>Amateur cook - Tea-enthusiast - Chill guy</h2>
                     <a href="#hobbies&interests" class="button">
-                        <img src="">
-                        Hobbies and Interests
+                        <img src="design_hobbiesinterests.png" class="ticket_button">
                     </a>
                     <a href="#potatodishrating" class="button">
-                        <img src="">
-                        Potato Dish Rating
+                        <img src="design_potatodish.png" class="ticket_button" >
                     </a>
                     <a href="favemusic.html" class="button">
-                        <img src="">
-                        Fave music
+                        <img src="design_favemusic.png" class="ticket_button">
+                    </a>
+                    <a href="#feedback" class="button">
+                        <img src="design_feedback.png" class="ticket_button">
                     </a>
                 </td>
             </tr>
         </table>
     </div>
 
-    <div id="hobbies&interests">
-        <h1>Hobbies and Interests</h1>
+    <div id="hobbies&interests" class="section">
         <table>
+            <tr>
+                <td colspan="2">
+                    <h1>Hobbies and Interests</h1>
+                </td>
+            </tr>
             <tr>
                 <td>
                     <h2>Learning new recipes</h2>
@@ -74,84 +78,114 @@
                     <p>I am currently learning Spanish 😃 because I would love to work abroad in Spain someday</p>
                 </td>
                 <td>
-                    <img src="duolingostreak.PNG" height="200px">
+                    <img src="duolingostreak.PNG">
                 </td>
             </tr>
         </table>
     </div>
 
-    <div id="potatodishrating">
-        <h1>Potato Dish Rating</h1>
+    <div id="potatodishrating" class="section">
         <table>
             <tr>
-                <th>Rank</th>
-                <th>Dish Name</th>
+                <td>
+                    <h1>Potato Dish Rating</h1>
+                </td>
             </tr>
             <tr>
-                <td>1</td>
-                <td>Cheesy Potato Salad</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Mashed Potatoes with chicken nuggets</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Thick French Fries</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Sweet Potato Latte</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Kamote Fries</td>
+                <td>
+                    <table >
+                        <tr>
+                            <th>Rank</th>
+                            <th>Dish Name</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Cheesy Potato Salad</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Mashed Potatoes with chicken nuggets</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Thick French Fries</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Sweet Potato Latte</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Kamote Fries</td>
+                        </tr>
+                    </table>
+                </td>
             </tr>
         </table>
+        
 
     </div>
 
-    <div id="Feedback">
-        <h1>What do you think of Marc?</h1>
-        <h2>Let me know your feedback</h2>
-        <form>
-            <label for="full-name">What is your name?</label>
-            <input type="text" id="full-name" name="fullName"><br>
+    <div id="feedback" class="section">
+        <table>
+            <tr>
+                <td colspan="2">
+                    <h1>What do you think of Marc?</h1>
+                    <h2>Let me know your feedback</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form>
+                        <label for="full-name">What is your name?</label>
+                        <input type="text" id="full-name" name="fullName"><br>
 
-            <br>
+                        <br>
 
-            <label for="height">What do you think is Marc's Height (in ft and inches)</label>
-            <input type="number" id="height" name="height" min="6">
-            <input type="number" id="height" name="height" min="4"><br>
+                        <label for="height">What do you think is Marc's Height (in ft and inches)</label>
+                        <input type="number" id="height" name="height" min="6">
+                        <input type="number" id="height" name="height" min="4"><br>
 
-            <br>
+                        <br>
 
-            <label>Choose one word that describes Marc:</label><br>
-            
-            <input type="radio" name="oneword" id="pogi">
-            <label for="pogi">Pogi</label><br>
-            <input type="radio" name="oneword"  id="handsome">
-            <label for="handsome">Handsome</label><br>
-            <input type="radio" name="oneword"  id="goodlooking">
-            <label for="goodlooking">Good-looking</label><br>
+                        <label>Choose one word that describes Marc:</label><br>
+                        
+                        <input type="radio" name="oneword" id="pogi">
+                        <label for="pogi">Pogi</label><br>
+                        <input type="radio" name="oneword"  id="handsome">
+                        <label for="handsome">Handsome</label><br>
+                        <input type="radio" name="oneword"  id="goodlooking">
+                        <label for="goodlooking">Good-looking</label><br>
 
-            <br>
-            
-            <label>What do you think are Marc's negative qualities?</label><br>
-            <input type="checkbox" id="impatient"  disabled value="1">
-            <label for="impatient">impatient</label><br>
-            <input type="checkbox" id="uncaring"  disabled value="1">
-            <label for="uncaring">uncaring</label><br>
-            <input type="checkbox" id="rude"  disabled value="1">
-            <label for="rude">rude</label><br>
-            <input type="checkbox" id="none"  value="yes">
-            <label for="none">None of the Above</label><br>
-            <input type="checkbox" id="good"  value="yes">
-            <label for="good">Marc is a lovable person</label><br>
+                        <br>
+                        
+                        
+                    </form>
+                </td>
+                <td>
+                    <form>
+                        <label>What do you think are Marc's negative qualities?</label><br>
+                        <input type="checkbox" id="impatient"  disabled value="1">
+                        <label for="impatient">impatient</label><br>
+                        <input type="checkbox" id="uncaring"  disabled value="1">
+                        <label for="uncaring">uncaring</label><br>
+                        <input type="checkbox" id="rude"  disabled value="1">
+                        <label for="rude">rude</label><br>
+                        <input type="checkbox" id="none"  value="yes">
+                        <label for="none">None of the Above</label><br>
+                        <input type="checkbox" id="good"  value="yes">
+                        <label for="good">Marc is a lovable person</label><br>
 
-            <br>
-            <button type="submit">Submit</button>
-        </form>
+                        <br>
+                        <button type="submit">Submit</button>
+                    </form>
+                    
+                </td>
+                
+            </tr>
+        </table>
+        
+        
     </div>
 </body>
 <footer>
