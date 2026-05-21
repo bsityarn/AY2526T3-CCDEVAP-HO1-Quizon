@@ -4,10 +4,13 @@ body {
     color: white;
 }
 
+/* Navigation bar styling */
 header {
     width: 100%;
     background-image: url('design_navbar.jpg');
     background-size: cover;
+    position: sticky;
+    top:0;
 }
 
 #navbar ul{
@@ -27,12 +30,18 @@ header {
     width: auto;  
 }
 
-#navbar ul li a img {
+#navbar ul li img {
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
     margin-left: 20px;
     height: 60px; 
     width: auto;
 }
 
+#navbar ul li:hover img{
+    transform: translateY(-5px) scale(1.1);
+    filter: brightness(1.2);
+    filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.3));
+}
 
 
 
