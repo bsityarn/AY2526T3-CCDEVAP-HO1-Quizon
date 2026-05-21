@@ -4,3 +4,10 @@ body {
 
     color: white;
 }
+
+/* For the links in the navbar */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
